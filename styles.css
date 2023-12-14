@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: black;
+    gap:10px;
+}
+
+.uploader {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    display: flex;
+    padding: 15px 20px;
+    border-bottom: 5px solid #651fff;
+    border-radius: 10px;
+}
+
+.uploader input {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+input::-webkit-file-upload-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #651fff;
+    color: #651fff;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input::-webkit-file-upload-button:hover {
+    background-color: #651fff;
+    color: white;
+}
+
+.uploader button {
+    width: max-content;
+    flex-shrink: 0;
+    padding: 10px 20px;
+    background-color: #651fff;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid #651fff;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.uploader button:hover {
+    background-color: transparent;
+    color: #651fff;
+}
+.output-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 5px solid #651fff;
+    border-radius: 10px;
+    justify-content: center;
+    gap:10px
+}
+.output-container img{
+width: 200px;
+height: 100px;
+}
+.output-container a{
+    text-decoration: none;
+    background-color: #651fff;
+    padding: 10px 15px;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid #651fff;
+}
+.output-container a:hover{
+    background-color: transparent;
+    color: #651fff;
+}
+@media screen and (max-width: 550px){
+    .uploader{
+       flex-wrap: wrap;
+        gap:15px;
+    }
+    .uploader button{
+        align-self: center;
+        width: max-content;
+        margin: 0 auto;
+    }
+}
